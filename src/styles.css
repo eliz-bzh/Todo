@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+}
+.card {
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #ff7e14;
+  color: #ffffff;
+}
+.cardHidden {
+  animation: fadeOutRight 2s 0s forwards;
+}
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+  99% {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+    position: fixed;
+  }
+}
